@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-  </head>
+<head>
+  <meta charset="utf-8">
+</head>
 
 <body>
   <h2>You must set the following values for PRS-A to work</h2>
@@ -19,27 +19,44 @@
       </tr>
     </table>
 
-    <br />
-    <button type="submit">Save</button>
-  </form>
+  <br/>
 
-    <br /> <br />
-    <br /> <br />
+<h2>Logging</h2>
+  <label>Log Level</label>
+  <select name="logLevel"
+          id="logLevel">
+    <option value="all">all</option>
+    <option value="debug">debug</option>
+    <option value="error">error</option>
+    <option value="fatal">fatal</option>
+    <option value="info">info</option>
+    <option value="trace">trace</option>
+    <option value="warn">warn</option>
+  </select>
 
-  <div style="padding-bottom: 30px">
-    <br /> <br />
-    <br /> <br />
-    This plugin requires a <a href="https://azure.microsoft.com/en-us/try/cognitive-services/?api=text-analytics">Microsoft Azure Cognitive Services API key.</a>
-    <br /> <br />
-    Simply click the link and choose <b>Get API Key</b> and follow the steps.
-    <br /> <br />
-    Once you finish, you will end up with something that looks like the following:
-    <br />
-    <img src="key-example.png" />
-    <br /> <br />
-    From this you can grab the host and one of the keys and paste them above, press Save, and you are all set!
-  </div>
-  <script src="options.js"></script>
+  <br/>
+  <br/>
+  <button type="submit">Save</button>
+</form>
+
+<br/> <br/>
+<br/> <br/>
+
+<div style="padding-bottom: 30px">
+  <br/> <br/>
+  <br/> <br/>
+  This plugin requires a <a href="https://azure.microsoft.com/en-us/try/cognitive-services/?api=text-analytics">Microsoft
+  Azure Cognitive Services API key.</a>
+  <br/> <br/>
+  Simply click the link and choose <b>Get API Key</b> and follow the steps.
+  <br/> <br/>
+  Once you finish, you will end up with something that looks like the following:
+  <br/>
+  <img src="key-example.png"/>
+  <br/> <br/>
+  From this you can grab the host and one of the keys and paste them above, press Save, and you are all set!
+</div>
+<script src="options.js"></script>
 </body>
 
 </html>

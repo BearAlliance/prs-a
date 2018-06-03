@@ -1,16 +1,25 @@
+const options = [
+  'key',
+  'host',
+  'logLevel'
+];
+
 function saveOptions(e) {
-  browser.storage.local.set({
-    key: document.querySelector("#key").value,
-    host: document.querySelector("#host").value
+  let lsObj = {};
+  options.forEach((option) => {
+    lsObj[option] = document.querySelector(`#${option}`).value;
   });
+  browser.storage.local.set(lsObj);
+
   e.preventDefault();
 }
 
 function restoreOptions() {
-  var gettingItem = browser.storage.local.get(['key', 'host']);
+  let gettingItem = browser.storage.local.get(options);
   gettingItem.then((res) => {
-    if (res.key) document.querySelector("#key").value = res.key;
-    if (res.host) document.querySelector("#host").value = res.host;
+    options.forEach((option) => {
+      if(res[option]) document.querySelector(`#${option}`).value = res[option];
+    });
   });
 }
 
