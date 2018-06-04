@@ -1,0 +1,25 @@
+{
+  "name": "prs-a",
+  "version": "0.0.1",
+  "description": "analyze the sentiment of github comments with azure analysis",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olore/prs-a.git"
+  },
+  "author": "Brian Olore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olore/prs-a/issues"
+  },
+  "homepage": "https://github.com/olore/prs-a#readme",
+  "dependencies": {
+    "log4javascript": "^1.4.15"
+  },
+  "devDependencies": {
+    "glob": "^7.1.2"
+  }
+}

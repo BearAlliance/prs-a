@@ -85,7 +85,7 @@ class Plugin {
         tabs[0].id,
         msg);
     }).catch((err) => console.error('TAB ERR', err))
-  } 
+  }
 
 };
 
